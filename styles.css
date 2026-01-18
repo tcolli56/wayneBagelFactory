@@ -233,6 +233,22 @@ a:hover { text-decoration: underline; }
 }
 
 /* =====================
+   STANDARDIZED GALLERY IMAGES
+===================== */
+.cards-gallery img.card-image {
+  max-width: 300px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #0b1f33;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* =====================
    RESPONSIVE
 ===================== */
 @media (max-width: 768px) {
