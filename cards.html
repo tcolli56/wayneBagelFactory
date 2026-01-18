@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Card Gallery | The Real League</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navigation">
+    <a href="index.html">Home</a>
+    <a href="cards.html">Cards</a>
+    <a href="#footer">Footnote</a>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="panel page-header">
+    <h1>Sports Card Collection</h1>
+  </header>
+
+  <!-- Cards Layout -->
+  <div class="cards-container">
+
+    <!-- ITEM 1: Header -->
+    <section class="panel cards-header">
+      <h2>Featured Card</h2>
+    </section>
+
+    <!-- ITEM 2: Gallery -->
+    <section class="panel cards-gallery">
+      <div class="gallery-placeholder">
+        <p>Card images will appear here</p>
+      </div>
+    </section>
+
+    <!-- ITEM 3: Description -->
+    <section class="panel cards-description">
+      <h3>Card Description</h3>
+      <p>Select a card to view its description and details.</p>
+    </section>
+
+    <!-- ITEM 4: Data Table -->
+    <section class="panel cards-data">
+      <h3>Search & Filter Cards</h3>
+      <input
+        type="text"
+        id="cardSearch"
+        placeholder="Search by player, brand, year, sport..."
+      >
+      <table id="cardsTable">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Sport</th>
+            <th>Year</th>
+            <th>Main Brand</th>
+            <th>Sub Brand</th>
+            <th>Condition</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Sources -->
+    <section class="panel cards-sources">
+      <h4>Sources</h4>
+      <ul>
+        <li>
+          <a href="https://thephiladelphiacitizen.org/pa-election-guide/">The Philadelphia Citizen</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="panel cards-footer" id="footer">
+      <p>
+        GitHub:
+        <a href="https://github.com/tcolli56">tcolli56</a>
+      </p>
+      <p>Brick wall background image by kues1 on Freepik</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

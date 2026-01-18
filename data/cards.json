@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nameFirst": "Michael",
+    "nameLast": "Jordan",
+    "sport": "Basketball",
+    "year": 1996,
+    "brandMain": "Topps",
+    "brandSub": "Chrome",
+    "condition": "PSA 9",
+    "description": "A classic mid-90s Michael Jordan card from the peak of the Chicago Bulls dynasty. Highly sought after by collectors for its iconic design and era.",
+    "image": "images/jordan-topps-chrome-1996.jpg"
+  },
+  {
+    "id": 2,
+    "nameFirst": "Tom",
+    "nameLast": "Brady",
+    "sport": "Football",
+    "year": 2003,
+    "brandMain": "Upper Deck",
+    "brandSub": "SP Authentic",
+    "condition": "BGS 9.5",
+    "description": "Early-career Tom Brady card highlighting the rise of one of the greatest quarterbacks in NFL history. A cornerstone card for football collections.",
+    "image": "images/brady-sp-authentic-2003.jpg"
+  },
+  {
+    "id": 3,
+    "nameFirst": "Ken",
+    "nameLast": "Griffey Jr.",
+    "sport": "Baseball",
+    "year": 1991,
+    "brandMain": "Upper Deck",
+    "brandSub": "Base Set",
+    "condition": "PSA 10",
+    "description": "A pristine Ken Griffey Jr. card from the early 90s baseball boom. Celebrated for its clean photography and nostalgic value.",
+    "image": "images/griffey-upper-deck-1991.jpg"
+  }
+]

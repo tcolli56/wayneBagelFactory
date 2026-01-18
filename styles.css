@@ -1,0 +1,262 @@
+/* =====================
+   GLOBAL RESET
+===================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =====================
+   PAGE BACKGROUND
+===================== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0b1f33; /* NAVY TEXT */
+  background-image: url("images/brick-wall-texture.jpg");
+  background-repeat: repeat;
+  background-size: 400px 400px;
+}
+
+/* =====================
+   NAVIGATION
+===================== */
+.navigation {
+  text-align: center;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.65);
+}
+.navigation a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 12px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+}
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   TYPOGRAPHY
+===================== */
+h1, h2, h3, h4 {
+  color: #8a6d1d; /* GOLD HEADINGS */
+  margin-top: 0;
+}
+p {
+  line-height: 1.6;
+}
+
+/* =====================
+   PANELS (CONTENT BLOCKS)
+===================== */
+.panel {
+  background-color: rgba(255, 255, 255, 0.88);
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* =====================
+   HEADER / MAIN
+===================== */
+#header {
+  text-align: center;
+  margin: 20px;
+}
+#main {
+  margin: 0 20px 20px;
+}
+
+/* =====================
+   MAIN GRID (INDEX PAGE)
+===================== */
+.container {
+  display: grid;
+  gap: 15px;
+  padding: 20px;
+
+  grid-template-areas:
+    "aboutHeader aboutHeader aboutHeader aboutHeader aboutHeader aboutHeader"
+    "about1 about1 about1 about2 about2 about2"
+    "right right right right right right"
+    "volunteerHeader volunteerHeader volunteerHeader volunteerHeader volunteerHeader volunteerHeader"
+    "volunteerBody volunteerBody volunteerBody volunteerBody volunteerBody volunteerBody"
+    "donateHeader donateHeader donateHeader donateHeader donateHeader donateHeader"
+    "donateBody donateBody donateBody donateBody donateBody donateBody"
+    "sources sources sources sources sources sources"
+    "footer footer footer footer footer footer";
+}
+.item1 { grid-area: aboutHeader; }
+.item2 { grid-area: about1; }
+.item3 { grid-area: about2; }
+.item4 { grid-area: right; }
+.item5 { grid-area: volunteerHeader; }
+.item6 { grid-area: volunteerBody; }
+.item7 { grid-area: donateHeader; }
+.item8 { grid-area: donateBody; }
+.item9 { grid-area: sources; }
+.item10 { grid-area: footer; }
+
+/* =====================
+   IMAGES
+===================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* =====================
+   LISTS
+===================== */
+ul { padding-left: 20px; }
+
+/* =====================
+   FORMS
+===================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label { font-size: 0.9rem; }
+input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #9ca3af;
+  color: #0b1f33;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+button,
+input[type="submit"] {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #e5e7eb;
+  color: #0b1f33;
+  transition: transform 0.4s ease, background-color 0.4s ease;
+}
+button:hover,
+input[type="submit"]:hover {
+  background-color: #2e7d32;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+@keyframes bounceIn {
+  0% { transform: scale(0.3); }
+  60% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+.bounce-in { animation: bounceIn 1.5s ease; }
+
+/* =====================
+   TABLES (CARDS PAGE)
+===================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  display: block;
+  overflow-x: auto;
+}
+th, td {
+  border: 1px solid #9ca3af;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #e5e7eb;
+  color: #0b1f33;
+}
+tr:hover {
+  background-color: #f1f5f9;
+  cursor: pointer;
+}
+
+/* =====================
+   ACTIVE ROW HIGHLIGHT
+===================== */
+.active-row {
+  background-color: #dbeafe !important;
+}
+
+/* =====================
+   SEARCH INPUT (CARDS)
+===================== */
+#cardSearch {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #9ca3af;
+  color: #0b1f33;
+}
+
+/* =====================
+   LINKS
+===================== */
+a { color: #1e3a8a; }
+a:hover { text-decoration: underline; }
+
+/* =====================
+   CARDS PAGE GRID
+===================== */
+.cards-container {
+  display: grid;
+  gap: 18px;
+  padding: 20px;
+
+  grid-template-areas:
+    "header"
+    "gallery"
+    "description"
+    "data"
+    "sources"
+    "footer";
+}
+.cards-header      { grid-area: header; }
+.cards-gallery     { grid-area: gallery; min-height: 260px; display: flex; align-items: center; justify-content: center; }
+.cards-description { grid-area: description; min-height: 100px; }
+.cards-data        { grid-area: data; }
+.cards-sources     { grid-area: sources; }
+.cards-footer      { grid-area: footer; }
+.gallery-placeholder {
+  border: 2px dashed #6b7280;
+  padding: 30px;
+  color: #0b1f33;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "aboutHeader"
+      "about1"
+      "about2"
+      "right"
+      "volunteerHeader"
+      "volunteerBody"
+      "donateHeader"
+      "donateBody"
+      "sources"
+      "footer";
+  }
+  .cards-container {
+    grid-template-areas:
+      "header"
+      "gallery"
+      "description"
+      "data"
+      "sources"
+      "footer";
+  }
+  .navigation a { display: inline-block; margin: 6px; }
+}
