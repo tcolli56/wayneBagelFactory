@@ -7,25 +7,21 @@ const descriptionSection = document.querySelector(".cards-description");
 const tableBody = document.querySelector("#cardsTable tbody");
 const searchInput = document.getElementById("cardSearch");
 
-// Determine base path so it works on GitHub Pages
-const repoBase = window.location.pathname.replace(/\/[^/]*$/, "/");
-
-// Load JSON data
-fetch(repoBase + "cards.json")
+// Fetch JSON data from the 'data' folder
+fetch("data/cards.json")
   .then(response => {
-    if (!response.ok) {
-      throw new Error("JSON fetch failed: " + response.status);
-    }
+    if (!response.ok) throw new Error("JSON fetch failed: " + response.status);
     return response.json();
   })
   .then(data => {
     cards = data;
     renderTable(cards);
-    if (cards.length > 0) selectCard(cards[0].id);
+    if (cards.length > 0) selectCard(cards[0].id); // load first card
   })
   .catch(error => {
     console.error("Error loading cards.json:", error);
     gallerySection.innerHTML = "<p>Error loading card data.</p>";
+    descriptionSection.innerHTML = "<p>Error loading card data.</p>";
   });
 
 /* =====================
@@ -58,6 +54,7 @@ function selectCard(cardId) {
 
   currentCardId = cardId;
 
+  // Update gallery
   gallerySection.innerHTML = `
     <img src="${card.image}" alt="${card.nameFirst} ${card.nameLast}" class="card-image">
     <p><strong>${card.nameFirst} ${card.nameLast}</strong> (${card.year})</p>
@@ -66,6 +63,7 @@ function selectCard(cardId) {
   img.style.cursor = "pointer";
   img.onclick = () => window.open(card.image, "_blank");
 
+  // Update description
   descriptionSection.innerHTML = `
     <h3>${card.nameFirst} ${card.nameLast}</h3>
     <p>${card.description}</p>
@@ -97,7 +95,7 @@ searchInput.addEventListener("input", event => {
   );
   renderTable(filtered);
   if (!filtered.find(c => c.id === currentCardId)) {
-    gallerySection.innerHTML = `<p>Select a card to view its image.</p>`;
-    descriptionSection.innerHTML = `<p>Select a card to view its description.</p>`;
+    gallerySection.innerHTML = "<p>Select a card to view its image.</p>";
+    descriptionSection.innerHTML = "<p>Select a card to view its description.</p>";
   }
 });
