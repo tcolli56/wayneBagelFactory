@@ -1,38 +1,38 @@
 [
   {
-    "id": 1,
-    "nameFirst": "Michael",
-    "nameLast": "Jordan",
-    "sport": "Basketball",
-    "year": 1996,
-    "brandMain": "Topps",
-    "brandSub": "Chrome",
-    "condition": "PSA 9",
-    "description": "A classic mid-90s Michael Jordan card from the peak of the Chicago Bulls dynasty. Highly sought after by collectors for its iconic design and era.",
-    "image": "images/jordan-topps-chrome-1996.jpg"
-  },
+  "id": 1,
+  "nameFirst": "Joel",
+  "nameLast": "Embiid",
+  "sport": "Basketball",
+  "year": "2025/26",
+  "brandMain": "Topps",
+  "brandSub": "Flagship Holiday",
+  "condition": "Raw",
+  "description": "Joel Embiid holiday card was pulled on Christmas Eve! This card has a piece of Embiid game worn jersey or knee brace.",
+  "image": "images/embiid-topps-flagship-holiday-2025.jpg"
+},
   {
     "id": 2,
-    "nameFirst": "Tom",
-    "nameLast": "Brady",
+    "nameFirst": "Saquon",
+    "nameLast": "Barkley",
     "sport": "Football",
-    "year": 2003,
-    "brandMain": "Upper Deck",
-    "brandSub": "SP Authentic",
-    "condition": "BGS 9.5",
-    "description": "Early-career Tom Brady card highlighting the rise of one of the greatest quarterbacks in NFL history. A cornerstone card for football collections.",
-    "image": "images/brady-sp-authentic-2003.jpg"
+    "year": 2018,
+    "brandMain": "Immaculate",
+    "brandSub": "National Treasures",
+    "condition": "Raw",
+    "description": "A rookie-era Saquon Barkley card from his debut NFL season. Very popular among football card collectors.",
+    "image": "images/barkley-immaculate-national-treasures-2018.jpg"
   },
   {
     "id": 3,
-    "nameFirst": "Ken",
-    "nameLast": "Griffey Jr.",
-    "sport": "Baseball",
-    "year": 1991,
-    "brandMain": "Upper Deck",
-    "brandSub": "Base Set",
-    "condition": "PSA 10",
-    "description": "A pristine Ken Griffey Jr. card from the early 90s baseball boom. Celebrated for its clean photography and nostalgic value.",
-    "image": "images/griffey-upper-deck-1991.jpg"
+    "nameFirst": "Egor",
+    "nameLast": "Děmin",
+    "sport": "Basketball",
+    "year": "2025/26",
+    "brandMain": "Topps",
+    "brandSub": "Chrome",
+    "condition": "Raw",
+    "description": "Go Time!",
+    "image": "images/demin-topps-chrome-2025.jpg"
   }
 ]
